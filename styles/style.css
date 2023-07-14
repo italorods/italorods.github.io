@@ -23,7 +23,8 @@ html{
 }
 
 body {
-    background: var(--bgcolor)
+    background: var(--bgcolor);
+    color: var(--textcolor);
 }
 
 header{
@@ -63,4 +64,63 @@ header{
     color: var(--textcolor);
     cursor: pointer;
     display: none;
+}
+
+section {
+    padding: 10rem 9% 2rem;
+    min-height: 100vh;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.first-section-content{
+    max-width: 60rem;
+}
+
+.first-section-content h1 {
+    font-size: 4.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.first-section-content .text-animate {
+    position: relative;
+    width: 41.4rem;
+}
+
+.first-section-content .text-animate h3{
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: 0.7px var(--textcolor2);
+}
+
+.first-section-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background-color: var(--textcolor2);
 }
