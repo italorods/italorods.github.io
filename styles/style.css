@@ -264,7 +264,7 @@ section {
     margin: 2rem 0 3rem;
 }
 
-.btn-box .btnsecond{
+.btn-box.btnsecond{
     width: 15rem;
     display: inline-block;
 }
