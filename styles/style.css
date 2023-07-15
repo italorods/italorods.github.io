@@ -265,6 +265,71 @@ section {
 }
 
 .btn-box.btnsecond{
-    width: 15rem;
+    width: 34.5rem;
     display: inline-block;
+}
+
+.experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .experiencia-title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .experiencia-entry {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    width: 50%;
+  }
+
+  .experiencia-entry::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--textcolor2);
+  }
+
+  .experiencia-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  .experiencia-content {
+    background-color: var(--textcolor2);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .experiencia-icon {
+    padding-right: 2rem;;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 900px){
+    .experiencia-entry{
+        width:100%;
+    }
+    .experiencia-content{
+        height: 15vh;
+    }
+    .first-section{
+        background: none;
+    }
+    .sobre{
+        background: none;
+    }
 }
