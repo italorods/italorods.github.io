@@ -12,9 +12,9 @@
 }
 
 :root{
-    --bgcolor: black;
+    --bgcolor: rgb(40, 40, 40);
     --textcolor: white;
-    --textcolor2: purple;       
+    --textcolor2: rgb(125, 82, 182);       
 }
 
 html{
@@ -103,7 +103,7 @@ section {
 }
 
 .first-section-content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 4rem;
 }
 
@@ -120,7 +120,76 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 18rem;
     height: 100%;
     background-color: var(--textcolor2);
+    border: 0.5rem solid var(--textcolor2);
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: var(--textcolor);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--bgcolor);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover::before{
+    width: 100%;
+}
+
+.first-section-icon{
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-section-icon a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 0.2rem solid var(--textcolor2);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--textcolor2);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.first-section-icon a:hover{
+    color: var(--textcolor);
+}
+
+.first-section-icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--textcolor2);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.first-section-icon a:hover::before{
+    width: 100%;
 }
