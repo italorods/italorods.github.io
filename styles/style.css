@@ -12,7 +12,8 @@
 }
 
 :root{
-    --bgcolor: rgb(40, 40, 40);
+    --bgcolorheader: rgb(40, 40, 40);
+    --bgcolor: #160b1e;
     --textcolor: white;
     --textcolor2: rgb(125, 82, 182);       
 }
@@ -38,7 +39,7 @@ header{
     display: flex;
     padding: 2rem 9%;
     z-index: 100;
-    background: var(--bgcolor);
+    background: var(--bgcolorheader);
 }
 
 .logo{
@@ -79,8 +80,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url('images/bg-section-1.jpg') no-repeat;
-    background-size: cover;
+    background: url(images/bg-section-1-transparent-top.png)no-repeat;
+    background-size: contain;
+    background-position: right;
+    
 }
 
 .first-section-content{
@@ -113,7 +116,6 @@ section {
 .btn-box {
     position: relative;
     display: flex;
-    justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
 }
@@ -195,4 +197,74 @@ section {
 
 .first-section-icon a:hover::before{
     width: 100%;
+}
+
+.sobre{
+    background: url(images/bg-section-1-transparent-bottom.png)no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+
+}
+
+.titulo{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.img-sobre{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sobre img{
+    width: 90%;
+    border-radius: 50%;
+    border: 0.2rem solid var(--textcolor2);
+}
+
+.img-sobre .circle-img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50% -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top:0.2rem solid var(--bgcolor);
+    border-bottom:0.2rem solid var(--bgcolor);
+    border-left:0.2rem solid var(--textcolor2);
+    border-right:0.2rem solid var(--textcolor2);
+}
+
+.sobre-content{
+    text-align: center;
+}
+
+.sobre-content h3{
+    font-size: 3rem;
+}
+
+.sobre-content p{
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box btnsecond{
+    width: 15rem;
+    display: inline-block;
 }
