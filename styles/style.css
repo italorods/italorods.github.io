@@ -38,6 +38,7 @@ header{
     display: flex;
     padding: 2rem 9%;
     z-index: 100;
+    background: var(--bgcolor);
 }
 
 .logo{
@@ -78,6 +79,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background: url('images/bg-section-1.jpg') no-repeat;
+    background-size: cover;
 }
 
 .first-section-content{
