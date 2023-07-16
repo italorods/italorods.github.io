@@ -597,6 +597,11 @@ span{
     .contato{
         min-height: 180vh;
     }
+
+    .first-section-icon {
+        top:6rem;
+        position: relative;
+    }
   }
 
   @media (max-width:768px){
