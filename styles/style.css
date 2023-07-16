@@ -59,7 +59,7 @@ header{
 
 .navbar a:hover, 
 .navbar a.active {
-    color: var(--textcolor2);
+    color: var(--textcolor0);
 }
 
 #menu {
@@ -116,7 +116,6 @@ span{
 .first-section-content p{
     font-size: 1.8rem;
     margin: 2rem 0 4rem;
-    width: 70%;
 }
 
 .btn-box {
@@ -282,12 +281,6 @@ span{
     flex-direction: column;
   }
 
-  .experiencia-title {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-
   .experiencia-entry {
     position: relative;
     margin-bottom: 40px;
@@ -329,9 +322,6 @@ span{
     .experiencia-entry{
         width:100%;
     }
-    .experiencia-content{
-        height: 15vh;
-    }
     .first-section{
         background:url(images/bg-section-1-transparent.webp) no-repeat;
         background-position-x: right;
@@ -347,12 +337,6 @@ span{
     min-width: auto;
     padding-top: 15rem;
     background: #13091c;
-}
-
-.titulo-habilidades{
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
 }
 
 .habilidades .linha-habilidades{
@@ -449,15 +433,9 @@ span{
     background-position: left;
 }
 
-.titulo-contato{
-    font-size: 5rem;
-    margin-bottom: 10rem;
-    text-align: center;
-}
 
 .contato-icon {
     margin: 0 auto;
-    width: 300px;
     display: flex;
     justify-content: center;
     gap: 8rem; 
@@ -508,15 +486,48 @@ span{
     }
   }
 
-@media (max-width:350px){
+@media (max-width:380px){
+    .experiencia-content {
+        
+    }
+
+    .experiencia-content-desc h3{
+        font-size: 1.4rem;
+    }
+
+    .experiencia-content-desc p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:371px){
     .first-section{
         background:none;
+        justify-content: center;
+        align-items: center;
     }
+
+    .first-section-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-section-content h1{
+        font-size: 4rem;
+    }
+
+    .btn-box{
+        justify-content: center;
+    }
+
     .sobre{
         background: none;
     }
     .contato {   
         background: none;
+        min-height: 90vh;
     }
 }
 
@@ -587,3 +598,99 @@ span{
         min-height: 180vh;
     }
   }
+
+  @media (max-width:768px){
+    #menu {
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 5%;
+        background: var(--textcolor2);
+        box-shadow: 0.5rem 1rem rbg (0,0,0,0.2);
+        transition: 0.25s;
+        transition-delay: 0.25s;
+        z-index: 1;
+    }
+
+    .navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bgcolorheader);
+        border-top:0.2rem solid rgb(0,0,0, 0.2);
+        z-index: -1;
+        transition: 0.25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav{
+        left: 0;
+        transition-delay:0.25s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 3rem;
+        transform: translate(-20rem);
+        transition: 0.25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a{
+        transform: translate(0);
+        transition-delay:0.25;
+    }
+  }
+
+  @media (max-width:600px){
+    .contato-icon a{
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+  }
+
+  @media (max-width:520px){
+
+    html {
+        font-size: 50%;
+    }
+
+    .first-section-content h1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-section-icon{
+        width: 140px;
+    }
+
+    .first-section-icon a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .titulo {
+        font-size: 4rem;
+
+  }
+}
+
+@media (max-width:350px){
+    html{
+        font-size: 40%;
+    }
+}

@@ -1,7 +1,0 @@
-//atribuir ano no footer da index
-
-  // Obtém o ano atual
-  const year = new Date().getFullYear();
-
-  // Atualiza o conteúdo do elemento span com o ano atual
-  document.getElementById("year").textContent = year;
