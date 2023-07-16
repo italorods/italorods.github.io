@@ -503,6 +503,7 @@ span{
       background-size: 60%;
       background-position-x: left;
       background-position-y: bottom;
+      min-height: 70vh;
     }
   }
 
