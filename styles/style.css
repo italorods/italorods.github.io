@@ -74,6 +74,10 @@ section {
     min-height: 100vh;
 }
 
+span{
+    color: var(--textcolor0);
+}
+
 .first-section{
     display: flex;
     align-items: center;
@@ -328,9 +332,136 @@ section {
         height: 15vh;
     }
     .first-section{
-        background-size: 50% 100%;
+        background-size: 30% 100%;
     }
     .sobre{
-        background-size: 50% 100%;
+        background-size: 30% 100%;
     }
+}
+
+.habilidades{
+    min-width: auto;
+    padding-top: 15rem;
+    background: #13091c;
+}
+
+.titulo-habilidades{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.habilidades .linha-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.linha-habilidades .coluna-habilidades{
+    flex: 1 1 40rem;
+}
+
+.box-habilidades .content-habilidade{
+    position: relative;
+    border: 0.2rem solid var(--textcolor0);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.content-habilidade .progress{
+    padding: 1rem 0;
+}
+
+.content-habilidade .progress h3{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-habilidade .progress h3 span{
+    color: var(--textcolor);
+}
+
+.content-habilidade .progress .bar{
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    border: 0.2rem solid var(--textcolor0);
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.content-habilidade .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: 0.3rem;
+    background: var(--textcolor0);
+}
+
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(2) .bar span{
+    width: 95%;
+}
+
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(3) .bar span{
+    width: 88%;
+}
+
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(4) .bar span{
+    width: 75%;
+}
+
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(5) .bar span{
+    width: 95%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(2) .bar span{
+    width: 95%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(3) .bar span{
+    width: 95%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(5) .bar span{
+    width: 85%;
+}
+
+.contato{
+    min-width: auto;
+    padding-top: 15rem;
+}
+
+.titulo-contato{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contato-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+}
+
+.contato-icon a{
+    border: 0.2rem solid var(--textcolor2);
+    border-radius: 50%;
+    font-size: 6rem;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    margin: 8rem;
+    
 }
