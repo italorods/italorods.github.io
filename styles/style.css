@@ -86,7 +86,7 @@ span{
     justify-content: center;
     align-items: flex-start;
     background: url(images/bg-section-1-transparent-top.png)no-repeat;
-    background-size: contain;
+    background-size: 60% 100%;
     background-position: right;
     
 }
@@ -206,7 +206,7 @@ span{
 
 .sobre{
     background: url(images/bg-section-1-transparent-bottom.png)no-repeat;
-    background-size: contain;
+    background-size: 60% 100%;
     background-position: right;
 }
 
@@ -332,10 +332,13 @@ span{
         height: 15vh;
     }
     .first-section{
-        background-size: 30% 100%;
+        background:url(images/bg-section-1-transparent.png) no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: 40%;
     }
     .sobre{
-        background-size: 30% 100%;
+        background: none;
     }
 }
 
@@ -440,28 +443,88 @@ span{
 .contato{
     min-width: auto;
     padding-top: 15rem;
+    background: url(images/bg-section-footer.png)no-repeat;
+    background-size: 60% 100%;
+    background-position: left;
 }
 
 .titulo-contato{
     font-size: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     text-align: center;
 }
 
 .contato-icon {
+    margin: 0 auto;
+    width: 300px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 10rem;
+    gap: 8rem; 
 }
 
 .contato-icon a{
-    border: 0.2rem solid var(--textcolor2);
+    position: relative;
+    font-size: 40px;
+    border: solid 0.2rem var(--textcolor2);
+    color: var(--textcolor2);
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
     border-radius: 50%;
-    font-size: 6rem;
-    height: 70px;
-    width: 70px;
-    text-align: center;
-    margin: 8rem;
-    
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contato-icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--textcolor2);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.contato-icon a:hover{
+    color: var(--textcolor);
+}
+
+.contato-icon a:hover::before{
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .contato {
+      background-size: 60%;
+      background-position-x: left;
+      background-position-y: bottom;
+    }
+  }
+
+@media (max-width:350px){
+    .first-section{
+        background:none;
+    }
+    .sobre{
+        background: none;
+    }
+    .contato {   
+        background: none;
+    }
+}
+
+.footer{
+    background: var(--bgcolorheader);
+    justify-content: center;
+    display: flex;
+    padding: 2rem 9%;
+}
+
+.content-footer p{
+    font-size: 1.7rem;
 }
