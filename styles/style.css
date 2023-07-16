@@ -103,14 +103,33 @@ span{
 
 .first-section-content .text-animate {
     position: relative;
-    width: 41.4rem;
+    width: 39rem;
 }
 
 .first-section-content .text-animate h3{
     font-size: 3.2rem;
     font-weight: 500;
     color: transparent;
-    -webkit-text-stroke: 1.0px var(--textcolor0);
+    -webkit-text-stroke: 0.7px var(--textcolor0);
+    background-image: linear-gradient(var(--textcolor0), var(--textcolor0));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: bgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.first-section-content .text-animate h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--textcolor0);
+    z-index: -1;
+    animation: bgPipelineText 6s linear infinite;
+    animation-delay: 2s;
 }
 
 .first-section-content p{
@@ -527,6 +546,11 @@ span{
     .contato {   
         background: none;
     }
+
+    .footer {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
 }
 
 .footer {
@@ -600,6 +624,12 @@ span{
     }
   }
 
+  @media (min-width:1000px){
+    .sobre-content p {
+        width: 800px;
+    }
+  }
+
   @media (max-width:768px){
     #menu {
         display: block;
@@ -654,6 +684,10 @@ span{
         transform: translate(0);
         transition-delay:0.25;
     }
+
+    .contato{
+        min-height: 80vh;
+    }
   }
 
   @media (max-width:600px){
@@ -675,15 +709,6 @@ span{
         flex-direction: column;
     }
 
-    .first-section-icon{
-        width: 140px;
-    }
-
-    .first-section-icon a{
-        width: 30px;
-        height: 30px;
-    }
-
     .titulo {
         font-size: 4rem;
 
@@ -697,5 +722,33 @@ span{
 
     .contato{
         min-height: 80vh;
+    }
+}
+
+/* keyframes */
+@keyframes bgText{
+
+    0%, 10%, 100%{
+        background-position: -39rem 0;
+    }
+
+    65%, 85%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes bgPipelineText{
+
+    0%, 10%, 100%{
+        width: 0;
+    }
+
+    65%, 78%, 85%{
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%, 81%{
+        opacity: 0;
     }
 }
