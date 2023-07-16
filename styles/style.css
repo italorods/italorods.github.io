@@ -327,9 +327,9 @@ section {
         height: 15vh;
     }
     .first-section{
-        background: none;
+        background-size: 50% 100%;
     }
     .sobre{
-        background: none;
+        background-size: 50% 100%;
     }
 }
