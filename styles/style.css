@@ -14,6 +14,7 @@
 :root{
     --bgcolorheader: rgb(40, 40, 40);
     --bgcolor: #160b1e;
+    --textcolor0: rgb(185 130 255);
     --textcolor: white;
     --textcolor2: rgb(125, 82, 182);       
 }
@@ -105,7 +106,7 @@ section {
     font-size: 3.2rem;
     font-weight: 500;
     color: transparent;
-    -webkit-text-stroke: 0.7px var(--textcolor2);
+    -webkit-text-stroke: 1.0px var(--textcolor0);
 }
 
 .first-section-content p{
