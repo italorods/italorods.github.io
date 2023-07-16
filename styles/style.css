@@ -103,7 +103,7 @@ span{
 
 .first-section-content .text-animate {
     position: relative;
-    width: 39rem;
+    width: 41rem;
 }
 
 .first-section-content .text-animate h3{
@@ -730,7 +730,7 @@ span{
 @keyframes bgText{
 
     0%, 10%, 100%{
-        background-position: -39rem 0;
+        background-position: -41rem 0;
     }
 
     65%, 85%{
