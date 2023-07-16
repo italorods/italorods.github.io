@@ -482,7 +482,6 @@ span{
       background-size: 60%;
       background-position-x: left;
       background-position-y: bottom;
-      min-height: 70vh;
     }
   }
 
@@ -527,7 +526,6 @@ span{
     }
     .contato {   
         background: none;
-        min-height: 90vh;
     }
 }
 
@@ -587,13 +585,7 @@ span{
     font-size: 1.7rem;
   }
 
-  @media (max-height: 700px ){
-    .contato{
-        min-height: 120vh;
-    }
-  }
-
-  @media (max-height: 400px ){
+  @media (max-height: 450px ){
     .contato{
         min-height: 180vh;
     }
@@ -601,6 +593,10 @@ span{
     .first-section-icon {
         top:6rem;
         position: relative;
+    }
+
+    section{
+        min-height: 160vh;
     }
   }
 
@@ -697,5 +693,9 @@ span{
 @media (max-width:350px){
     html{
         font-size: 40%;
+    }
+
+    .contato{
+        min-height: 80vh;
     }
 }
