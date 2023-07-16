@@ -85,7 +85,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url(images/bg-section-1-transparent-top.png)no-repeat;
+    background: url(images/bg-section-1-transparent-top.webp)no-repeat;
     background-size: 60% 100%;
     background-position: right;
     
@@ -205,7 +205,7 @@ span{
 }
 
 .sobre{
-    background: url(images/bg-section-1-transparent-bottom.png)no-repeat;
+    background: url(images/bg-section-1-transparent-bottom.webp)no-repeat;
     background-size: 60% 100%;
     background-position: right;
 }
@@ -332,10 +332,10 @@ span{
         height: 15vh;
     }
     .first-section{
-        background:url(images/bg-section-1-transparent.png) no-repeat;
+        background:url(images/bg-section-1-transparent.webp) no-repeat;
         background-position-x: right;
         background-position-y: top;
-        background-size: 40%;
+        background-size: 28%;
     }
     .sobre{
         background: none;
@@ -443,7 +443,7 @@ span{
 .contato{
     min-width: auto;
     padding-top: 15rem;
-    background: url(images/bg-section-footer.png)no-repeat;
+    background: url(images/bg-section-footer.webp)no-repeat;
     background-size: 60% 100%;
     background-position: left;
 }
