@@ -116,6 +116,7 @@ span{
 .first-section-content p{
     font-size: 1.8rem;
     margin: 2rem 0 4rem;
+    width: 70%;
 }
 
 .btn-box {
@@ -573,4 +574,16 @@ span{
   
   .content-footer p {
     font-size: 1.7rem;
+  }
+
+  @media (max-height: 700px ){
+    .contato{
+        min-height: 120vh;
+    }
+  }
+
+  @media (max-height: 400px ){
+    .contato{
+        min-height: 180vh;
+    }
   }
