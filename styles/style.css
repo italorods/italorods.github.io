@@ -355,7 +355,7 @@ span{
 
 .habilidades{
     min-width: auto;
-    padding-top: 15rem;
+    padding-top: 10rem;
     background: #13091c;
 }
 
@@ -447,7 +447,7 @@ span{
 
 .contato{
     min-width: auto;
-    padding-top: 15rem;
+    padding-top: 10rem;
     background: url(images/bg-section-footer.webp)no-repeat;
     background-size: 60% 100%;
     background-position: left;
@@ -724,6 +724,13 @@ span{
     .contato{
         min-height: 80vh;
     }
+}
+
+@media (min-width:1100px){
+    html{
+        font-size: 55%;
+    }
+
 }
 
 /* keyframes */
