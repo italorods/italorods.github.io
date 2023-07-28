@@ -289,6 +289,10 @@ span{
     margin: 2rem 0 3rem;
 }
 
+.sobre-content span{
+    color: var(--textcolor);
+}
+
 .btn-box.btnsecond{
     width: 34.5rem;
     display: inline-block;
@@ -499,7 +503,7 @@ span{
 
 @media (max-width: 900px) {
     .contato {
-      background-size: 60%;
+      background-size: 50%;
       background-position-x: left;
       background-position-y: bottom;
     }
@@ -688,6 +692,7 @@ span{
 
     .contato{
         min-height: 80vh;
+        background-size: 38%;
     }
   }
 
