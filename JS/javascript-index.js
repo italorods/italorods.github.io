@@ -33,7 +33,7 @@
     const year = new Date().getFullYear();
 
     // Atualiza o conteúdo do elemento span com o ano atual
-    document.getElementById("year").textContent = year;
+    document.getElementById("year").innerHTML = year;
 
 //minha idade 
 
@@ -41,4 +41,4 @@
     const idade = year-1998      
 
     //atualiza o conteúdo do elemento span com minha idade atual
-    document.getElementById("idade").textContent = idade;
+    document.getElementById("idade").innerHTML = idade;
