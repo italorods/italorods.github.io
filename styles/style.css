@@ -117,7 +117,6 @@ span{
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: bgText 6s linear infinite;
-    animation-delay: 2s;
 }
 
 .first-section-content .text-animate h3::before{
@@ -130,7 +129,6 @@ span{
     border-right: 2px solid var(--textcolor0);
     z-index: -1;
     animation: bgPipelineText 6s linear infinite;
-    animation-delay: 2s;
 }
 
 .first-section-content p{
