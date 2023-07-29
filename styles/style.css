@@ -113,6 +113,7 @@ span{
     -webkit-text-stroke: 0.7px var(--textcolor0);
     background-image: linear-gradient(var(--textcolor0), var(--textcolor0));
     background-repeat: no-repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: bgText 6s linear infinite;
@@ -510,10 +511,6 @@ span{
   }
 
 @media (max-width:380px){
-    .experiencia-content {
-        
-    }
-
     .experiencia-content-desc h3{
         font-size: 1.4rem;
     }
