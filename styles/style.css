@@ -106,7 +106,7 @@ span{
     width: 41rem;
 }
 
-.first-section-content .text-animate h3{
+.first-section-content .text-animate h2{
     font-size: 3.2rem;
     font-weight: 500;
     color: transparent;
@@ -119,7 +119,7 @@ span{
     animation: bgText 6s linear infinite;
 }
 
-.first-section-content .text-animate h3::before{
+.first-section-content .text-animate h2::before{
     content: '';
     position: absolute;
     top: 0;
