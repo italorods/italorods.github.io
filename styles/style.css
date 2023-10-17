@@ -624,6 +624,13 @@ span{
     }
   }
 
+  @media (max-width:550px){
+    .titulo {
+        margin-bottom: 12rem;
+    }
+
+  }
+
   @media (min-width:1000px){
     .sobre-content p {
         width: 800px;
