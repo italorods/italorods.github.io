@@ -427,6 +427,9 @@ span{
 .coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(5) .bar span{
     width: 87%;
 }
+.coluna-habilidades:nth-child(1) .content-habilidade .progress:nth-child(6) .bar span{
+    width: 92%;
+}
 
 .coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(1) .bar span{
     width: 93%;
@@ -446,6 +449,10 @@ span{
 
 .coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(5) .bar span{
     width: 92%;
+}
+
+.coluna-habilidades:nth-child(2) .content-habilidade .progress:nth-child(6) .bar span{
+    width: 96%;
 }
 
 .contato{
